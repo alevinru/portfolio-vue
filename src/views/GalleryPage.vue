@@ -1,6 +1,6 @@
 <template lang="pug">
 v-container.text-center
-  .text-h2 {{ gallery?.title }}
+  .text-h2.text-grey-darken-2 {{ gallery?.title }}
   image-gallery(:folder="folder" @click="onClick")
 vue-easy-lightbox(
   :visible="visibleRef"
@@ -8,6 +8,9 @@ vue-easy-lightbox(
   :index="indexRef"
   @hide="onHide"
   move-disabled
+  :min-zoom="1"
+  :max-zoom="2"
+  :scroll-disabled="true"
 )
 </template>
 

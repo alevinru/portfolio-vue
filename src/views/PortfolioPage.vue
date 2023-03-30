@@ -1,6 +1,6 @@
 <template lang="pug">
-.text-center
-  author-title.pa-2(:author="store.author")
+.text-center.my-2
+  author-title.pa-2.my-1(:author="store.author")
   gallery-list(
     :galleries="store.galleries"
     @click="onClick"

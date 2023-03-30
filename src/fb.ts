@@ -23,4 +23,3 @@ export const database = getDatabase(app);
 export async function listStorageFolder(folder: string) {
   return listAll(ref(storage, folder));
 }
-

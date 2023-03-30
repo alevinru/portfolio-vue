@@ -3,12 +3,14 @@
 v-responsive.gallery-list
   v-row(
   )
-    v-col.mx-auto.v-col-md-8.v-col-lg-8.v-col-sm-10(
+    v-col.mx-auto.v-col-md-8.v-col-lg-6.v-col-sm-10(
       cols="12"
       v-for="gallery in galleries"
       :key="gallery.id"
     )
-      v-card.ma-2(@click="emit('click', gallery)")
+      v-card.my-3.mx-1.bg-grey-lighten-3(
+        @click="emit('click', gallery)"
+      )
         v-card-title {{ gallery.title }}
         v-card-text
           v-img(:src="gallery.avatar")
