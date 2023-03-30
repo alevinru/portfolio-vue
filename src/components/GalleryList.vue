@@ -8,7 +8,7 @@ v-responsive.gallery-list
       v-for="gallery in galleries"
       :key="gallery.id"
     )
-      v-card.ma-2
+      v-card.ma-2(@click="emit('click', gallery)")
         v-card-title {{ gallery.title }}
         v-card-text
           v-img(:src="gallery.avatar")
@@ -19,6 +19,10 @@ import type Gallery from '@/types/gallery';
 
 defineProps<{
   galleries: Gallery[];
+}>();
+
+const emit = defineEmits<{
+  (e: 'click', gallery: Gallery): void;
 }>();
 
 </script>

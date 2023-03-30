@@ -7,12 +7,10 @@ const routes = [
     component: () => import('@/views/PortfolioPage.vue'),
   },
   {
-    path: '/ams',
-    name: 'ams',
+    path: '/gallery/:folder',
+    name: 'Gallery',
     component: () => import('@/views/GalleryPage.vue'),
-    props: {
-      folder: 'ams-2007',
-    },
+    props: true,
   },
 ]
 
