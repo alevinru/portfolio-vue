@@ -1,0 +1,12 @@
+$primary: #3838ee;
+$secondary: #44ddee;
+$background: #FFFFFF;
+
+//@import "vuetify/settings";
+
+@mixin sm-and-up() {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+  // @media (max-width: $screen-xs-max) and (orientation: $orientation)
+}
