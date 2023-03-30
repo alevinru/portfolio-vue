@@ -1,7 +1,14 @@
 <template lang="pug">
 .text-center.my-2
   author-title.pa-2.my-1(:author="store.author")
+  v-progress-circular.mt-10(
+    v-if="!store.galleries.length"
+    :size="100"
+    :width="10"
+    indeterminate
+  )
   gallery-list(
+    v-else
     :galleries="store.galleries"
     @click="onClick"
   )

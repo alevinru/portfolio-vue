@@ -20,9 +20,4 @@ const { author } = storeToRefs(useAppStore());
 
 loadAuthor('author/alevin');
 
-loadImages('ams-2007')
-  .then(() => {
-    console.log('Images loaded');
-  });
-
 </script>
