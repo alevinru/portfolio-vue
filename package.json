@@ -2,13 +2,14 @@
   "name": "stmv",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ignore-path .gitignore"
   },
   "dependencies": {
     "@mdi/font": "7.2.96",
+    "@mdi/js": "^7.4.47",
     "firebase": "^9.18.0",
     "pinia": "^2.0.33",
     "vue": "^3.2.47",
