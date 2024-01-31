@@ -1,7 +1,7 @@
 <template lang="pug">
 
 v-responsive.gallery-list
-  v-row(
+  v-row.px-2(
   )
     v-col.mx-auto.v-col-md-8.v-col-lg-7.v-col-sm-10(
       cols="12"
