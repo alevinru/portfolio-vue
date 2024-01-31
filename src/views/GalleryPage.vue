@@ -1,6 +1,14 @@
 <template lang="pug">
 v-container.text-center
+  .text-left
+    v-btn.back(
+      variant="text"
+      prepend-icon="$mdiArrowLeft"
+      :to="{ name: 'Home' }"
+    ) back
   .text-h2.text-grey-darken-2 {{ gallery?.title }}
+  .text-h6.moto.text-grey-darken-2
+    small {{ gallery?.description }}
   v-progress-circular.my-10(
     v-if="!images.length"
     :size="100"
