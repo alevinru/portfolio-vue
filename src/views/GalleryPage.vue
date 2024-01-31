@@ -1,11 +1,15 @@
 <template lang="pug">
-v-container.text-center
-  .text-left
+v-app-bar(
+  density="compact"
+  :elevation="0"
+)
+  template(#prepend)
     v-btn.back(
       variant="text"
       prepend-icon="$mdiArrowLeft"
       :to="{ name: 'Home' }"
     ) back
+v-container.text-center
   .text-h2.text-grey-darken-2 {{ gallery?.title }}
   .text-h6.moto.text-grey-darken-2
     small {{ gallery?.description }}
