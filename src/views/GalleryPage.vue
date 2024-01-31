@@ -10,7 +10,7 @@ v-app-bar(
       :to="{ name: 'Home' }"
     ) back
 v-container.text-center
-  .text-h2.text-grey-darken-2 {{ gallery?.title }}
+  .text-h4.text-grey-darken-2 {{ gallery?.title }}
   .text-h6.moto.text-grey-darken-2
     small {{ gallery?.description }}
   v-progress-circular.my-10(
