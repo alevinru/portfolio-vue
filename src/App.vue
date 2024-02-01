@@ -12,7 +12,6 @@ v-app
 
 <script setup lang="ts">
 import { loadAuthor } from '@/services/authoring';
-import { loadImages } from '@/services/imaging';
 import { storeToRefs } from 'pinia';
 import { useAppStore } from '@/store/app';
 

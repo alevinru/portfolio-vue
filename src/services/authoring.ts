@@ -1,7 +1,6 @@
 import { onValue, ref } from '@firebase/database';
 import { database } from '@/fb';
 import { useAppStore } from '@/store/app';
-import type Gallery from '@/types/gallery';
 
 export function loadAuthor(path: string) {
   const store = useAppStore();
