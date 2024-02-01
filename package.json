@@ -8,14 +8,14 @@
     "lint": "eslint . --ignore-path .gitignore"
   },
   "dependencies": {
-    "@mdi/font": "7.2.96",
+    "@mdi/font": "7.4.47",
     "@mdi/js": "^7.4.47",
-    "firebase": "^9.18.0",
-    "pinia": "^2.0.33",
-    "vue": "^3.2.47",
-    "vue-easy-lightbox": "^1.15.0",
-    "vue-router": "^4.1.6",
-    "vuetify": "^3.1.11"
+    "firebase": "^9.23.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.15",
+    "vue-easy-lightbox": "^1.17.0",
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.5.2"
   },
   "devDependencies": {
     "@types/node": "^18.15.10",
